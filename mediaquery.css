@@ -13,32 +13,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 60px 16px;
   }
 }
 
 @media (max-width: 768px) {
   .about-img{
     height: 240px;
-    width: 240px;
+    width: 343px;
   }
 }
 
 @media (max-width: 768px) {
   .about-text{
-    width: 260px;
+    width: 343px;
   }
 }
 
 @media (max-width: 768px) {
   .product-exp,
   .frontend-exp{
-    width: 240px;
+    width: 343px;
   }
 }
 
 @media (max-width: 768px) {
   .project{
-    width: 240px;
+    width: 343px;
   }
 }
 
@@ -64,15 +66,15 @@
 
 @media (max-width: 768px) {
   .email-frame{
-  width: fit-content;
-  padding: 12px 16px;
+  width: 343px;
+  
   }
 }
 
 @media (max-width: 768px) {
   .education,
   .experience{
-  width: 220px;
+  width: 343px;
   height: 120px;
   }
 }
