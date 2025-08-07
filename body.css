@@ -194,7 +194,7 @@ h2{
   padding: 24px 24px;
   border-style: solid;
   border-width: 1.5px;
-  border-radius: 32px;
+  border-radius: 16px;
   border-color: grey;
 }
 
@@ -229,7 +229,7 @@ h2{
   width: 480px;
   border-style: solid;
   border-width: 1.5px;
-  border-radius: 20px;
+  border-radius: 16px;
   border-color: grey;
   padding: 24px 24px;
 }
@@ -281,7 +281,7 @@ h2{
   height: fit-content;
   border-style: solid;
   border-width: 1.5px;
-  border-radius: 32px;
+  border-radius: 16px;
   border-color: grey;
   gap: 12px;
   background-color: rgb(245, 247, 249);
@@ -343,7 +343,7 @@ h2{
   gap: 12px;
   border-style: solid;
   border-color: rgb(98, 97, 97);
-  border-radius: 20px;
+  border-radius: 16px;
   border-width: 1.5px;
   padding: 16px 48px;
   background-color: rgb(247, 242, 242);
