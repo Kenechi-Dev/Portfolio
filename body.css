@@ -168,7 +168,7 @@ h2{
 .about-content{
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: fit-content;
   gap: 24px;
   align-items: center;
 }
@@ -200,7 +200,7 @@ h2{
 
 .about-text{
   display: flex;
-  width: fill;
+  width: 720px;
   color: grey;
 }
 
