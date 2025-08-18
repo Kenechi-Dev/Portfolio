@@ -1,12 +1,54 @@
 const sheet = document.getElementById('sheet-frame');
-const openBtn = document.getElementById('project');
+const pluriTongues = document.getElementById('pluritongues');
+const pluritonguesContent = document.querySelector('.pluritongues-content')
+const evently = document.getElementById('evently')
+const eventlyContent = document.querySelector('.evently-content')
+const tripMatch = document.getElementById('tripmatch')
+const tripmatchContent = document.querySelector('.tripmatch-content')
+const Vanta = document.getElementById('vanta')
+const vantaContent = document.querySelector('.vanta-content')
 const closeBtn = document.getElementById('close-btn');
 const overlay = document.querySelector('.overlay');
 
- openBtn.onclick = () => {
+
+ pluriTongues.onclick = () => {
     sheet.classList.add('active');
     document.body.classList.add('noscroll');
     overlay.classList.add('active');
+    pluritonguesContent.style.display = 'flex'
+    eventlyContent.style.display = 'none'
+    tripmatchContent.style.display = 'none'
+    vantaContent.style.display = 'none'
+  };
+
+ evently.onclick = () => {
+    sheet.classList.add('active');
+    document.body.classList.add('noscroll');
+    overlay.classList.add('active');
+    eventlyContent.style.display = 'flex';
+    pluritonguesContent.style.display = 'none';
+    tripmatchContent.style.display = 'none';
+    vantaContent.style.display = 'none';
+  };
+
+  tripMatch.onclick = () => {
+    sheet.classList.add('active');
+    document.body.classList.add('noscroll');
+    overlay.classList.add('active');
+    tripmatchContent.style.display = 'flex';
+    pluritonguesContent.style.display = 'none'
+    eventlyContent.style.display = 'none'
+    vantaContent.style.display = 'none'
+  };
+
+  vanta.onclick = () => {
+    sheet.classList.add('active');
+    document.body.classList.add('noscroll');
+    overlay.classList.add('active');
+    vantaContent.style.display = 'flex';
+    pluritonguesContent.style.display = 'none'
+    tripmatchContent.style.display = 'none'
+    eventlyContent.style.display = 'none'
   };
 
    closeBtn.onclick = () => {
