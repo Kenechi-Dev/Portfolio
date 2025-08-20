@@ -15,7 +15,7 @@ const overlay = document.querySelector('.overlay');
     sheet.classList.add('active');
     document.body.classList.add('noscroll');
     overlay.classList.add('active');
-    sheet.scrollTop = 0;
+    sheet.scrollTo({ top: 0, behavior: 'smooth' });
     pluritonguesContent.style.display = 'flex'
     eventlyContent.style.display = 'none'
     tripmatchContent.style.display = 'none'
@@ -26,7 +26,7 @@ const overlay = document.querySelector('.overlay');
     sheet.classList.add('active');
     document.body.classList.add('noscroll');
     overlay.classList.add('active');
-    sheet.scrollTop = 0;
+    sheet.scrollTo({ top: 0, behavior: 'smooth' });
     eventlyContent.style.display = 'flex';
     pluritonguesContent.style.display = 'none';
     tripmatchContent.style.display = 'none';
@@ -37,7 +37,7 @@ const overlay = document.querySelector('.overlay');
     sheet.classList.add('active');
     document.body.classList.add('noscroll');
     overlay.classList.add('active');
-    sheet.scrollTop = 0;
+    sheet.scrollTo({ top: 0, behavior: 'smooth' });
     tripmatchContent.style.display = 'flex';
     pluritonguesContent.style.display = 'none'
     eventlyContent.style.display = 'none'
@@ -48,7 +48,7 @@ const overlay = document.querySelector('.overlay');
     sheet.classList.add('active');
     document.body.classList.add('noscroll');
     overlay.classList.add('active');
-    sheet.scrollTop = 0;
+    sheet.scrollTo({ top: 0, behavior: 'smooth' });
     vantaContent.style.display = 'flex';
     pluritonguesContent.style.display = 'none'
     tripmatchContent.style.display = 'none'
