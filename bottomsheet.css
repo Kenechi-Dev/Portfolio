@@ -11,7 +11,7 @@
   width: 100vw;
   background: #fff;
   box-sizing: border-box;
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 0.3s ease-in-out;
   scroll-behavior: smooth;
 }
@@ -84,7 +84,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 100vw;
+  width: fit-content;
   height: fit-content;
   box-sizing: border-box;
   align-items: center;
