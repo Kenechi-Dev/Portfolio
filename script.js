@@ -7,6 +7,8 @@ const tripMatch = document.getElementById('tripmatch')
 const tripmatchContent = document.querySelector('.tripmatch-content')
 const Vanta = document.getElementById('vanta')
 const vantaContent = document.querySelector('.vanta-content')
+const Uishowcase = document.getElementById('Uishowcase')
+const uishowcaseContent = document.querySelector('.uishowcase-content')
 const closeBtn = document.getElementById('close-btn');
 const overlay = document.querySelector('.overlay');
 
@@ -20,6 +22,7 @@ const overlay = document.querySelector('.overlay');
     eventlyContent.style.display = 'none'
     tripmatchContent.style.display = 'none'
     vantaContent.style.display = 'none'
+    uishowcaseContent.style.display = 'none'
   };
 
  evently.onclick = () => {
@@ -31,7 +34,8 @@ const overlay = document.querySelector('.overlay');
     pluritonguesContent.style.display = 'none';
     tripmatchContent.style.display = 'none';
     vantaContent.style.display = 'none';
-  };
+    uishowcaseContent.style.display = 'none'
+  }
 
   tripMatch.onclick = () => {
     sheet.classList.add('active');
@@ -42,6 +46,7 @@ const overlay = document.querySelector('.overlay');
     pluritonguesContent.style.display = 'none'
     eventlyContent.style.display = 'none'
     vantaContent.style.display = 'none'
+    uishowcaseContent.style.display = 'none'
   };
 
   vanta.onclick = () => {
@@ -53,6 +58,19 @@ const overlay = document.querySelector('.overlay');
     pluritonguesContent.style.display = 'none'
     tripmatchContent.style.display = 'none'
     eventlyContent.style.display = 'none'
+    uishowcaseContent.style.display = 'none'
+  };
+
+    Uishowcase.onclick = () => {
+    sheet.classList.add('active');
+    document.body.classList.add('noscroll');
+    overlay.classList.add('active');
+    sheet.scrollTo({ top: 0, behavior: 'smooth' });
+    vantaContent.style.display = 'none';
+    pluritonguesContent.style.display = 'none'
+    tripmatchContent.style.display = 'none'
+    eventlyContent.style.display = 'none'
+    uishowcaseContent.style.display = 'flex'
   };
 
    closeBtn.onclick = () => {
