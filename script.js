@@ -1,3 +1,17 @@
+function gitHub() {
+  window.open('https://github.com/Kenechi-Dev')
+}
+
+function linkedIn() {
+  window.open('https://www.linkedin.com/in/kenechi-okonkwo-36b05a195?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpWAoOiYoRWazd5l%2BGTQJ5g%3D%3D')
+}
+
+function beHance() {
+  window.open('https://www.behance.net/keneokonkwo')
+}
+
+
+
 const sheet = document.getElementById('sheet-frame');
 const pluriTongues = document.getElementById('pluritongues');
 const pluritonguesContent = document.querySelector('.pluritongues-content')
