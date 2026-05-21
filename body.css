@@ -280,14 +280,20 @@ h2{
   padding: 24px 24px;
   width: 480px;
   height: fit-content;
-  border-style: solid;
-  border-width: 1.5px;
+  border: none;
   border-radius: 16px;
-  border-color: grey;
   gap: 12px;
-  background-color:rgb(247, 242, 242);
-  transition: transform 0.3s ease-in-out;
+  background-size: 300% 300%;
+  background-position: left top;
+  transition: background-position 0.9s ease, transform 0.3s ease-in-out;
 }
+
+/* Per-card warm gradients matched to each image's colour palette */
+#pluritongues { background-image: linear-gradient(135deg, #FFF8F5 0%, #EDE8FF 50%, #FFF8F5 100%); }
+#evently      { background-image: linear-gradient(135deg, #FFF0E6 0%, #FFD4A3 50%, #FFF0E6 100%); }
+#tripmatch    { background-image: linear-gradient(135deg, #EFF6FF 0%, #C7D9FF 50%, #EFF6FF 100%); }
+#vanta        { background-image: linear-gradient(135deg, #F0FAF0 0%, #C8E6C4 50%, #F0FAF0 100%); }
+#Uishowcase   { background-image: linear-gradient(135deg, #F8F5FF 0%, #E9D8FF 50%, #F8F5FF 100%); }
 
 .project-img{
   width: 100%;
@@ -297,8 +303,8 @@ h2{
 
 .project:hover{
   transform: scale(1.05);
+  background-position: right bottom;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
   z-index: 2;
 }
 
@@ -362,3 +368,44 @@ h2{
 .overlay.active{
   display: block;
 }
+
+/* ── Hero entrance (fires on page load) ──────────────────────── */
+@keyframes heroScale {
+  from { opacity: 0; transform: scale(0.82); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.pp-frame {
+  animation: heroScale 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.hero-text {
+  animation: heroFadeUp 0.8s ease 0.28s both;
+}
+
+/* ── Scroll reveal (triggered by JS adding .visible) ─────────── */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(52px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes revealLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes revealRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.reveal { opacity: 0; }
+
+.reveal.visible.from-bottom { animation: revealUp    0.65s ease forwards; }
+.reveal.visible.from-left   { animation: revealLeft  0.65s ease forwards; }
+.reveal.visible.from-right  { animation: revealRight 0.65s ease forwards; }
