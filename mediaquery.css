@@ -1,91 +1,48 @@
 @media (max-width: 768px) {
+
+  /* ── Navigation ──────────────────────────────────────────────── */
+  .desktop-nav { display: none; }
+  .mobile-nav  { display: flex; }
+
+  /* ── All sections ────────────────────────────────────────────── */
+  .hero,
+  .about,
+  .myexperience,
+  .projects,
+  .contact {
+    padding: 60px 24px;
+    box-sizing: border-box;
+  }
+
   .hero {
     flex-direction: column;
-    align-items: center;
   }
-}
 
-@media (max-width: 768px) {
-.about,
-.myexperience,
-.projects,
-.contact {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 60px 16px;
-  }
-}
+  /* ── Hero text ───────────────────────────────────────────────── */
+  .name     { font-size: 28px; }
+  .job-role { font-size: 22px; }
 
-@media (max-width: 768px) {
-  .about-img{
-    height: 240px;
-    width: 240px;
-  }
-}
+  /* ── About ───────────────────────────────────────────────────── */
+  .about-img  { width: 220px; height: 220px; }
+  .about-text { width: 100%; }
 
-@media (max-width: 768px) {
-  .about-text{
-    width: 343px;
-    box-sizing: border-box;
-    padding: 0px 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  .product-exp,
-  .frontend-exp{
-    width: 343px;
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 768px) {
-  .project{
-    width: 343px;
-  }
-}
-
-@media (max-width: 768px) {
-  .sheet-frame.active{
-  width: 100vw;
-  left: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .desktop-nav{
-  display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .mobile-nav{
-  display: flex;
-  }
-}
-
-@media (max-width: 768px) {
-  .email-frame{
-  width: 343px;
-  box-sizing: border-box;
-  }
-}
-
-@media (max-width: 768px) {
+  /* ── Experience ──────────────────────────────────────────────── */
+  .experience,
   .education,
-  .experience{
-  width: 343px;
-  height: 140px;
-  box-sizing: border-box;
+  .product-exp,
+  .frontend-exp {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ── Projects ────────────────────────────────────────────────── */
+  .project-body { padding: 0; }
+  .project      { width: 100%; }
+
+  /* ── Contact ─────────────────────────────────────────────────── */
+  .email-frame {
+    width: 100%;
+    padding: 16px 24px;
+    box-sizing: border-box;
   }
 }
-
-@media (max-width: 768px) {
-  .name{
-  font-size: 32px;
-  }
-}
-
-
