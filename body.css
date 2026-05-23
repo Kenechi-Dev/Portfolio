@@ -264,12 +264,13 @@ h2{
 .project-body{
   display: flex;
   flex-direction: row;
-  flex: 1 1;
   flex-wrap: wrap;
-  row-gap: 96px;
-  width: 100%;
-  align-items: top;
-  justify-content: space-evenly;
+  row-gap: 72px;
+  column-gap: 72px;
+
+  max-width: 1100px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .project{
@@ -277,23 +278,12 @@ h2{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px 24px;
-  width: 480px;
+  width: calc(50% - 36px);
   height: fit-content;
-  border: none;
   border-radius: 16px;
   gap: 12px;
-  background-size: 300% 300%;
-  background-position: left top;
-  transition: background-position 0.9s ease, transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
-
-/* Per-card warm gradients matched to each image's colour palette */
-#pluritongues { background-image: linear-gradient(135deg, #FFF8F5 0%, #EDE8FF 50%, #FFF8F5 100%); }
-#evently      { background-image: linear-gradient(135deg, #FFF0E6 0%, #FFD4A3 50%, #FFF0E6 100%); }
-#tripmatch    { background-image: linear-gradient(135deg, #EFF6FF 0%, #C7D9FF 50%, #EFF6FF 100%); }
-#vanta        { background-image: linear-gradient(135deg, #F0FAF0 0%, #C8E6C4 50%, #F0FAF0 100%); }
-#Uishowcase   { background-image: linear-gradient(135deg, #F8F5FF 0%, #E9D8FF 50%, #F8F5FF 100%); }
 
 .project-img{
   width: 100%;
@@ -303,7 +293,6 @@ h2{
 
 .project:hover{
   transform: scale(1.05);
-  background-position: right bottom;
   cursor: pointer;
   z-index: 2;
 }
