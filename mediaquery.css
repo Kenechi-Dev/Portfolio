@@ -3,6 +3,7 @@
   /* ── Navigation ──────────────────────────────────────────────── */
   .desktop-nav { display: none; }
   .mobile-nav  { display: flex; }
+  .menu-links  { display: flex; }
 
   /* ── All sections ────────────────────────────────────────────── */
   .hero,
